@@ -1,4 +1,9 @@
-import {areDeltasWithinThreshold, getCountOfSafeLists, isListConsistent} from "../util/listAnalyser";
+import {
+    areDeltasWithinThreshold,
+    getCountOfSafeLists,
+    getCountOfSafeListsWithDampener, getDampenedList,
+    isListConsistent
+} from "../util/listAnalyser";
 const safeDecrement = [7, 6, 4, 2, 1]; //Safe because the levels are all decreasing by 1 or 2.
 const unsafeDecrement = [9, 7, 6, 2, 1]; //Unsafe because 6 2 is a decrease of 4.
 const unSafeIncrement = [1, 2, 7, 8, 9]; //Unsafe because 2 7 is an increase of 5.
@@ -37,4 +42,23 @@ test('safe lists should be 2', async () => {
     expect(getCountOfSafeLists(testList, threshold)).toEqual(2)
 });
 
+test.each([
+    ['remove 1st element', unsafeDecrement, 0, [7, 6, 2, 1]],
+    ['remove 3rd element', unsafeDecrement, 3, [9, 7, 6, 1]],
+    ['remove last element', unsafeDecrement, 4, [9, 7, 6, 2]],
+    ['no removal with index out of bounds', unsafeDecrement, 5, unsafeDecrement]])
+('get dampened list: %s', (_,testList,  index, expected, ) => {
+   expect(getDampenedList(testList, index)).toEqual(expected);
+});
 
+test('safe lists should be 4 with dampening', async () => {
+    const threshold: ThresholdType = {min: 0, max: 3};
+    expect(getCountOfSafeListsWithDampener(testList, threshold)).toEqual(4)
+});
+
+test('unsafe list should become safe list', async () => {
+    const threshold: ThresholdType = {min: 0, max: 3};
+    const testList = [[1, 3, 2, 4, 5]]
+    expect(getCountOfSafeLists(testList, threshold)).toEqual(0);
+    expect(getCountOfSafeListsWithDampener(testList, threshold)).toEqual(1);
+})

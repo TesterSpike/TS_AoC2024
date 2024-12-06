@@ -17,3 +17,30 @@ export const getCountOfSafeLists = (lists: number[][], threshold: ThresholdType)
     });
     return safeCount;
 }
+
+export const getDampenedList = (list: number[], i: number) => {
+    if (i === list.length - 1) {
+        return list.slice(0, i);
+    } else {
+        return list.slice(0, i).concat(list.slice(i + 1));
+    }
+}
+
+export const getCountOfSafeListsWithDampener = (lists: number[][], threshold: ThresholdType) => {
+    let safeCount = 0;
+    lists.forEach((list) => {
+        if (list.length > 0 && isListConsistent(list) && areDeltasWithinThreshold(list, threshold)) {
+            safeCount++;
+        } else {
+            for (let i = 0; i < list.length; i++) {
+                let dampList: number[] = [];
+                dampList = getDampenedList(list, i);
+                if (isListConsistent(dampList) && areDeltasWithinThreshold(dampList, threshold)) {
+                    safeCount++;
+                    break;
+                }
+            }
+        }
+    });
+    return safeCount;
+}
