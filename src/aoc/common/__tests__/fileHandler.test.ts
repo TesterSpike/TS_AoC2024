@@ -1,4 +1,13 @@
-import {getListsFromFileText, getTextListsFromFileName} from "../util/fileHandler";
+import {
+    getListsFromFileText,
+    getStringFromFileName,
+    getTextListsFromFileName
+} from "../util/fileHandler";
+
+test('should extract string from file', () => {
+    const expected ='7 6 4 2 1\n1 2 7 8 9\n9 7 6 2 1\n1 3 2 4 5\n8 6 4 4 1\n1 3 6 7 9';
+    expect(getStringFromFileName('./src/aoc/day2/resources/Day2_Data_Test.txt')).toEqual(expected);
+});
 
 test('file is read correctly', async () => {
     const expected = [

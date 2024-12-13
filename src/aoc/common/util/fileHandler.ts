@@ -1,7 +1,11 @@
 import * as fs from "node:fs";
 
 export const getTextListsFromFileName = (fileName: string) => {
-    return fs.readFileSync(fileName, 'utf8').split('\r\n');
+    return getStringFromFileName(fileName).split('\r\n');
+}
+
+export const getStringFromFileName = (fileName: string) => {
+    return fs.readFileSync(fileName, 'utf8');
 }
 
 export const getListsFromFileText = (fileText: string[]) => {
