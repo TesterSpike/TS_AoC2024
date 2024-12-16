@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 
-export const getTextListsFromFileName = (fileName: string) => {
-    return getStringFromFileName(fileName).split('\r\n');
+export const getTextLinesFromFileName = (fileName: string) => {
+    return getStringFromFileName(fileName).split('\n');
 }
 
 export const getStringFromFileName = (fileName: string) => {
@@ -18,4 +18,13 @@ export const getNumberListsFromFileText = (fileText: string[]) => {
         lists.push(numbers);
     });
     return lists;
+}
+
+export const getLetterGridFromFileText = (fileText: string[])=> {
+    const grid: string[][] = []
+    fileText.forEach(line => {
+        grid.push(line.split(''));
+    });
+    console.log(`grid: ${JSON.stringify(grid)}`)
+    return grid;
 }

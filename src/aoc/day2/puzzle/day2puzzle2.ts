@@ -1,4 +1,4 @@
-import {getNumberListsFromFileText, getTextListsFromFileName} from "../../common/util/fileHandler";
+import {getNumberListsFromFileText, getTextLinesFromFileName} from "../../common/util/fileHandler";
 import {getCountOfSafeListsWithDampener} from "../util/listAnalyser";
 
 export class Day2puzzle2 {
@@ -7,7 +7,7 @@ export class Day2puzzle2 {
             min: 0,
             max: 3
         }
-        const lists = getNumberListsFromFileText(getTextListsFromFileName(file));
+        const lists = getNumberListsFromFileText(getTextLinesFromFileName(file));
         return getCountOfSafeListsWithDampener(lists, threshold);
     }
 }
