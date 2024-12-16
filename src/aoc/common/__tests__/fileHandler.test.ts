@@ -1,5 +1,5 @@
 import {
-    getListsFromFileText,
+    getNumberListsFromFileText,
     getStringFromFileName,
     getTextListsFromFileName
 } from "../util/fileHandler";
@@ -29,7 +29,7 @@ test('should extract string list from file', () => {
 
 test('string list is converted to a number list', async () => {
     const testList = ['7 6 4 2 1']
-    expect(getListsFromFileText(testList)).toEqual([[7, 6, 4, 2, 1]]);
+    expect(getNumberListsFromFileText(testList)).toEqual([[7, 6, 4, 2, 1]]);
 });
 
 test('string lists are converted to number lists', async () => {
@@ -49,5 +49,5 @@ test('string lists are converted to number lists', async () => {
         [8, 6, 4, 4, 1],
         [1, 3, 6, 7, 9]
     ]
-    expect(getListsFromFileText(testList)).toEqual(expected);
+    expect(getNumberListsFromFileText(testList)).toEqual(expected);
 });

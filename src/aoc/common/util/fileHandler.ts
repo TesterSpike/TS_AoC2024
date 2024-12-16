@@ -8,7 +8,7 @@ export const getStringFromFileName = (fileName: string) => {
     return fs.readFileSync(fileName, 'utf8');
 }
 
-export const getListsFromFileText = (fileText: string[]) => {
+export const getNumberListsFromFileText = (fileText: string[]) => {
     const lists: number[][] = [];
     fileText.forEach((line) => {
         let numbers: number[] = [];
