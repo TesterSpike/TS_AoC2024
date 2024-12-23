@@ -9,7 +9,7 @@ import {
   isMatchingWordRight,
   isMatchingWordUp
 } from '../util/gridWordAnalyser';
-import {XMASGrid} from '../../resources/commonConstants';
+import {XMASGrid} from '../../common/resources/commonConstants';
 
 const constrainedGrid = [
   ['X', 'M', 'A', 'S'],

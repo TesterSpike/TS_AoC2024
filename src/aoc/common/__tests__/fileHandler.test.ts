@@ -4,7 +4,7 @@ import {
   getStringFromFileName,
   getTextLinesFromFileName
 } from "../util/fileHandler";
-import {XMASGrid} from '../../resources/commonConstants';
+import {XMASGrid} from '../resources/commonConstants';
 
 test('should extract string from file', () => {
   const expected = '7 6 4 2 1\n1 2 7 8 9\n9 7 6 2 1\n1 3 2 4 5\n8 6 4 4 1\n1 3 6 7 9';
