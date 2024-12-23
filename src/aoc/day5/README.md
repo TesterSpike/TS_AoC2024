@@ -7,7 +7,7 @@ The Elf must recognize you, because they waste no time explaining that the new s
 
 Safety protocols clearly indicate that new pages for the safety manuals must be printed in a very specific order. The notation X|Y means that if both page number X and page number Y are to be produced as part of an update, page number X must be printed at some point before page number Y.
 
-The Elf has for you both the page ordering rules and the pages to produce in each update (your puzzle manual), but can't figure out whether each update has the pages in the right order.
+The Elf has for you both the page ordering rules and the pages to produce in each update (your puzzle input), but can't figure out whether each update has the pages in the right order.
 
 For example:
 
