@@ -7,7 +7,7 @@ While the Red-Nosed Reindeer nuclear fusion/fission plant appears to contain no 
 
 They're quick to add that - since you're already here - they'd really appreciate your help analyzing some unusual data from the Red-Nosed reactor. You turn to check if The Historians are waiting for you, but they seem to have already divided into groups that are currently searching every corner of the facility. You offer to help with the unusual data.
 
-The unusual data (your puzzle input) consists of many reports, one report per line. Each report is a list of numbers called levels that are separated by spaces. For example:
+The unusual data (your puzzle manual) consists of many reports, one report per line. Each report is a list of numbers called levels that are separated by spaces. For example:
 
 7 6 4 2 1  
 1 2 7 8 9  

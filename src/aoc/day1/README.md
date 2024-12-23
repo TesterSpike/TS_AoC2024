@@ -12,7 +12,7 @@ Upon pouring into the office, everyone confirms that the Chief Historian is inde
 
 Throughout the Chief's office, the historically significant locations are listed not by name but by a unique number called the location ID. To make sure they don't miss anything, The Historians split into two groups, each searching the office and trying to create their own complete list of location IDs.
 
-There's just one problem: by holding the two lists up side by side (your puzzle input), it quickly becomes clear that the lists aren't very similar. Maybe you can help The Historians reconcile their lists?
+There's just one problem: by holding the two lists up side by side (your puzzle manual), it quickly becomes clear that the lists aren't very similar. Maybe you can help The Historians reconcile their lists?
 
 For example:
 

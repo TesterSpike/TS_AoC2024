@@ -3,7 +3,7 @@
 
 The shopkeeper turns to you. "Any chance you can see why our computers are having issues again?"
 
-The computer appears to be trying to run a program, but its memory (your puzzle input) is corrupted. All of the instructions have been jumbled up!
+The computer appears to be trying to run a program, but its memory (your puzzle manual) is corrupted. All of the instructions have been jumbled up!
 
 It seems like the goal of the program is just to multiply some numbers. It does that with instructions like mul(X,Y), where X and Y are each 1-3 digit numbers. For instance, mul(44,46) multiplies 44 by 46 to get a result of 2024. Similarly, mul(123,4) would multiply 123 by 4.
 
