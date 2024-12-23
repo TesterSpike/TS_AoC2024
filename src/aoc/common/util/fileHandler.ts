@@ -25,6 +25,5 @@ export const getLetterGridFromFileText = (fileText: string[])=> {
     fileText.forEach(line => {
         grid.push(line.split(''));
     });
-    console.log(`grid: ${JSON.stringify(grid)}`)
     return grid;
 }
