@@ -1,4 +1,4 @@
-import {getNumberListsFromFileText, getTextLinesFromFileName} from "../../common/util/fileHandler";
+import {getNumberListsFromFileText, getTextLinesFromFileName} from "../../../common/util/fileHandler";
 import {getCountOfSafeListsWithDampener} from "../util/listAnalyser";
 
 export class Day2puzzle2 {

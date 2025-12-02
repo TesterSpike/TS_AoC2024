@@ -1,4 +1,4 @@
-import {getStringFromFileName} from '../../common/util/fileHandler';
+import {getStringFromFileName} from '../../../common/util/fileHandler';
 import {calculateTotalFromEnabledPhrases, getValidPhraseFromString} from '../util/mulAnalyser';
 
 export class Day3Puzzle2 {

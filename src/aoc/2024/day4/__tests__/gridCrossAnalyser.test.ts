@@ -1,4 +1,4 @@
-import {XMASGrid} from '../../common/resources/commonConstants';
+import {XMASGrid} from '../../../common/resources/commonConstants';
 import {
   getCountOfCrossedMatchingWordInGrid,
   getWords,

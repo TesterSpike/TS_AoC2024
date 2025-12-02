@@ -1,4 +1,4 @@
-import {getTextLinesFromFileName} from '../../common/util/fileHandler';
+import {getTextLinesFromFileName} from '../../../common/util/fileHandler';
 import {GridPoint} from '../types/gridPoint';
 import {Direction} from '../types/direction';
 

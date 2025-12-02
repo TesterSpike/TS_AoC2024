@@ -1,4 +1,4 @@
-import {getTextLinesFromFileName} from '../../common/util/fileHandler';
+import {getTextLinesFromFileName} from '../../../common/util/fileHandler';
 import {manual} from '../types/manual';
 
 export const getManualDetails = (fileName: string) => {

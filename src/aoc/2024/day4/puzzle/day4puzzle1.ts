@@ -1,4 +1,4 @@
-import {getLetterGridFromFileText, getTextLinesFromFileName} from '../../common/util/fileHandler';
+import {getLetterGridFromFileText, getTextLinesFromFileName} from '../../../common/util/fileHandler';
 import {getCountOfMatchingWordInGrid} from '../util/gridWordAnalyser';
 
 export class Day4puzzle1 {
